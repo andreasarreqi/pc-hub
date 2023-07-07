@@ -1,3 +1,16 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+}
 .footer {
-    color: blue;
+    color: #fff;
+    bottom: 0;
+    background-color: black;
 }
