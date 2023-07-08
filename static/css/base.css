@@ -19,7 +19,13 @@ body {
     height: calc(100vh - 164px);
 }
 
+h1 {
+    backdrop-filter: blur(50px);
+}
 /*--------------------------------------- navigation bar styling */
+nav {
+    background-color: black;
+}
 
 /*--------------------------------------- footer styling */
 .footer {
@@ -65,5 +71,4 @@ body {
 /*--------------------------------------- home page and button */
 .container {
     text-align: center;
-
 }
