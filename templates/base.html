@@ -90,20 +90,23 @@
             </div>
         </nav>
         {% include 'includes/main-nav.html' %}
-
     </header>
 
 
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+    <!--Page content wrapped in a main tag-->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
     {% block postloadjs %}
     <!-- For Later (Messages/Toasts)-->
     {% endblock %}
 
+    <!--Footer-->
     <footer>
         {% include 'includes/footer.html'%}
     </footer>
