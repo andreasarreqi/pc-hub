@@ -1,15 +1,13 @@
 from django.contrib import admin
-from .models import Products
+from .models import Product
 
 
-@admin.register(Products)
+@admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = (
-        'name',
-        'category',
-        'price',
-        'rating',
-        'image',
-    )
+    """
+    Class represents the post functions on the admin panel
+    """
+    list_display = ('name', 'price', 'rating', )
+    search_fields = ['name']
 
     ordering = ('price',)
