@@ -22,6 +22,7 @@ class Product(models.Model):
         'Category', null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField()
+    manifacturer = models.TextField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
     in_stock = models.BooleanField(default=True, null=True)
     quantity = models.DecimalField(max_digits=3, decimal_places=0, default=0)
